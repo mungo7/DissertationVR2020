@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(isGrounded && velocity.y < 0)
         {
-            velocity.y = -2f;
+            velocity.y = -1f;
         }
 
         float x = Input.GetAxis("Horizontal");
@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
         } 
 
 
-        velocity.y += gravity * Time.deltaTime;
+       velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
 
