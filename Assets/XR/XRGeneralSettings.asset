@@ -14,6 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: 6937779653700338847}
   m_InitManagerOnStart: 1
+--- !u!114 &-5505049042201539137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c3631f5e58749a59194e0cf6baf6d5, type: 3}
+  m_Name: iPhone Providers
+  m_EditorClassIdentifier: 
+  m_RequiresSettingsUpdate: 0
+  m_AutomaticLoading: 0
+  m_AutomaticRunning: 0
+  m_Loaders: []
 --- !u!114 &-4243719614910283055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,11 +72,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2dc886499c26824283350fa532d087d, type: 3}
   m_Name: XRGeneralSettings
   m_EditorClassIdentifier: 
-  Keys: 01000000070000000d000000
+  Keys: 01000000070000000d00000004000000
   Values:
   - {fileID: 1263284481955270736}
   - {fileID: -5958939739500377816}
   - {fileID: -2368797786630971337}
+  - {fileID: 1376940983695606598}
 --- !u!114 &1263284481955270736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,6 +91,20 @@ MonoBehaviour:
   m_Name: Standalone Settings
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: 5477550152691290504}
+  m_InitManagerOnStart: 1
+--- !u!114 &1376940983695606598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
+  m_Name: iPhone Settings
+  m_EditorClassIdentifier: 
+  m_LoaderManagerInstance: {fileID: -5505049042201539137}
   m_InitManagerOnStart: 1
 --- !u!114 &5477550152691290504
 MonoBehaviour:
@@ -91,6 +122,8 @@ MonoBehaviour:
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders:
+  - {fileID: 11400000, guid: 60b83ad8754a79c44952e54f00846b61, type: 2}
+  - {fileID: 11400000, guid: e9720c81a7a0a834c9d10e63749a08b5, type: 2}
   - {fileID: 11400000, guid: 7790ea7399306cc43a2eefa8030812f9, type: 2}
 --- !u!114 &6937779653700338847
 MonoBehaviour:
