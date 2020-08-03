@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+
     //Create a Vector3 to store velocity
     Vector3 velocity;
     //This boolean value is determined by whether or not the player is touching the ground
@@ -53,5 +54,10 @@ public class PlayerMovement : MonoBehaviour
         //Move the player according to their velocity
         controller.Move(velocity * Time.deltaTime);
 
+
+
+
+
     }
 }
+

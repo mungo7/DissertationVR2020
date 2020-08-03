@@ -12,6 +12,10 @@ public class AIEvacuate : MonoBehaviour
 
     NavMeshAgent navMeshAgent;
 
+    float distanceLeft;
+
+    float timeTaken = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +45,23 @@ public class AIEvacuate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (navMeshAgent == null)
+        {
+            Debug.LogError("Nav Mesh Agent is not attached");
+        }
+        else
+        {
+            timeTaken += Time.deltaTime;
+
+            distanceLeft = Vector3.Distance(destinationObject.transform.position, this.gameObject.transform.position);
+
+            if (distanceLeft <= 2)
+            {
+                Debug.Log("Name: " + navMeshAgent.name + " Time: " + timeTaken + "seconds");
+                Destroy(this.gameObject);
+            }
+        }
+
+
     }
 }
