@@ -57,7 +57,7 @@ public class AIEvacuate : MonoBehaviour
 
             if (distanceLeft <= 2)
             {
-                Debug.Log("Name: " + navMeshAgent.name + " Time: " + timeTaken + "seconds");
+                Debug.Log("Name: " + navMeshAgent.name + " Time: " + timeTaken + " seconds");
                 Destroy(this.gameObject);
             }
         }
